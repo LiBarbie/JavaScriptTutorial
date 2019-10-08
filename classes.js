@@ -1,4 +1,4 @@
-//Constructor Function
+/*//Constructor Function
 function Person(name, surname, dateOfBirth){
 	this.name = name;
 	this.surname = surname;
@@ -9,6 +9,21 @@ function Person(name, surname, dateOfBirth){
 	this.getFullName = function(){
 		return this.name+" "+this.surname;
 	}
+}//Person
+*/
+//Class
+class Person{
+	constructor(name,surname,dateOfBirth){
+		this.name = name;
+		this.surname = surname;
+		this.dateOfBirth = dateOfBirth;
+	}//constructor
+	getBirthYear(){
+		return this.dateOfBirth.substr(6,4);
+	}//getBirthYear
+	getFullName(){
+		return this.name+" "+this.surname;
+	}//getFullName
 }//Person
 
 //instatiate an object
