@@ -9,4 +9,6 @@ different[2]=false;
 different.push("trying");
 different.unshift("strawberries");
 
+console.log(different.indexOf("trying"));
+
 console.log(different);
